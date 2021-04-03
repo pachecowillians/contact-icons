@@ -1,0 +1,167 @@
+.chatContainer{
+	width:50px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 999999;
+}
+
+.openMenu{
+	background: #2fb5d2;
+	position: fixed;
+	bottom: 20px;
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	display: inline;
+	z-index: 999999;
+}
+
+.chatWpp{
+	background: rgba(37, 211, 102,0);
+	position: fixed;
+	bottom: 30px;
+	right:40px;
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	display: inline;
+	z-index: 999999;
+	transition: bottom 0.3s, background 0.5s, width 0.3s, border-radius 0.3s, right 0.3s, visibility 0.2s;
+}
+
+.chatMail{
+	background: rgba(212, 70, 56,0);
+	position: fixed;
+	bottom: 30px;
+	right:40px;
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	display: inline;
+	z-index: 999999;
+	transition: bottom 0.3s, background 0.5s, width 0.3s, border-radius 0.3s, right 0.3s, visibility 0.2s;
+}
+
+.chatTelegram{
+	background: rgba(0, 136, 204,0);
+	position: fixed;
+	bottom: 30px;
+	right:40px;
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	display: inline;
+	z-index: 999999;
+	transition: bottom 0.3s, background 0.5s, width 0.3s, border-radius 0.3s, right 0.3s, visibility 0.2s;
+}
+
+.chatOnline{
+	background: rgba(239, 100, 90,0);
+	position: fixed;
+	bottom: 30px;
+	right:40px;
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	display: inline;
+	z-index: 999999;
+	transition: bottom 0.3s, background 0.5s, width 0.3s, border-radius 0.3s, right 0.3s, visibility 0.2s;
+}
+
+.iconChat{
+	position: relative;
+	left: 18px;
+	top: 17px;
+	width:25px;
+	height:25px;
+}
+
+.textChat{
+	cursor: default;
+	user-select: none;
+	background:#fff;
+	font-family: 'Noto Sans', sans serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #2fb5d2;
+	border: 1px solid #2fb5d2;
+	border-radius: 15px;
+	position: absolute;
+	bottom: -25px;
+	right: 70px;
+	width:  130px;
+	padding: 15px;
+	text-align: center;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,.11);
+	transition: bottom 0.3s, width 0.1s;
+}
+
+.triangle{
+	position: relative;
+	right: 20px;
+	bottom: -6px;
+	width: 0px; 
+	height: 0px; 
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid #2fb5d2;
+	transition: bottom 0.3s;
+}
+
+.triangleWhite{
+	position: absolute;
+	left: -22px;
+	bottom: -7px;
+	width: 0px; 
+	height: 0px; 
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+	border-left: 9px solid #fff;
+	z-index: 999999;
+	transition: bottom 0.3s;
+}
+.txtLink{
+	text-decoration: none;
+}
+.chatWpp:hover, .chatMail:hover, .chatTelegram:hover, .chatOnline:hover{
+	right: 40px;
+	width: 150px;
+	border-radius:30px;
+	z-index: 999999;
+}
+
+.textMenu{
+	color:rgba(255,255,255,0);
+	visibility: hidden;
+	font-family: 'Noto Sans', sans serif;
+	font-size: 15px;
+	font-weight: bold;
+	position: absolute;
+	top: 20px;
+	left: 55px;
+	transition: color 0.3s;
+}
+
+@media (max-width: 500px){
+	.txtLink{
+		text-decoration: none;
+	}
+	.chatWpp, .chatMail, .chatTelegram, .chatOnline{
+		right: 40px;
+		width: 150px;
+		border-radius:30px;
+	}
+
+	.textMenu{
+		color:rgba(255,255,255,1);
+		font-family: 'Noto Sans', sans serif;
+		font-size: 15px;
+		font-weight: bold;
+		position: absolute;
+		top: 18px;
+		left: 55px;
+		transition: color 0.3s;
+	}
+
+}
