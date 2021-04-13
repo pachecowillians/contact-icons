@@ -10,39 +10,40 @@
 </head>
 
 <body>
-	<div class="chatContainer">
-		<a target="_blank" rel="noopener noreferrer" href="#" class="txtLink">
-			<div class="chatWpp" id="chatWpp" onmouseover="messageOverWpp()" onmouseleave="messageLeaveWpp()">
-				<img class="iconChat" id="iconWpp" src="img/wpp.png">
-				<span class="textMenu" id="textWpp">Whatsapp</span>
-			</div>
-		</a>
-		<a target="_blank" rel="noopener noreferrer" href="#">
-			<div class="chatMail" id="chatMail" onmouseover="messageOverMail()" onmouseleave="messageLeaveMail()">
-				<img class="iconChat" id="iconMail" src="img/mail.png">
-				<span class="textMenu" id="textMail">Email</span>
-			</div>
-		</a>
-		<a target="_blank" rel="noopener noreferrer" href="#">
-			<div class="chatTelegram" id="chatTelegram" onmouseover="messageOverTele()"
-				onmouseleave="messageLeaveTele()">
-				<img class="iconChat" id="iconTele" src="img/telegram.png">
-				<span class="textMenu" id="textTele">Telegram</span>
-			</div>
-		</a>
-		<div>
-			<div class="triangle" id="triangle"></div>
-			<div class="triangleWhite" id="triangleWhite"></div>
-			<div class="textChat" id="textChat" onclick="showButtons()">
-				Talk with us
-			</div>
-			<div class="openMenu" id="openMenu" onclick="showButtons()">
-				<a>
-					<img class="iconChat icClose" id="iconChat" src="img/chat.png">
-				</a>
-			</div>
+	<div class="talk-with-us" onclick="toggleContacts()">
+		<div class="triangle triangle-border"></div>
+		<div class="triangle triangle-white"></div>
+		Talk with us
+	</div>
+	<div class="contact-icon toggle-contact" onclick="toggleContacts()">
+		<div class="contact-content">
+			<img src="img/chat.png" alt="contacts" class="contact-img">
 		</div>
 	</div>
+	<a target="_blank" rel="noopener noreferrer" href="#">
+		<div class="contact-icon contact-expand">
+			<div class="contact-content">
+				<img src="img/email.png" alt="email" class="contact-img">
+				<div class="contact-text">Email</div>
+			</div>
+		</div>
+	</a>
+	<a target="_blank" rel="noopener noreferrer" href="#">
+		<div class="contact-icon contact-expand">
+			<div class="contact-content">
+				<img src="img/whatsapp.png" alt="whatsapp" class="contact-img">
+				<div class="contact-text">Whatsapp</div>
+			</div>
+		</div>
+	</a>
+	<a target="_blank" rel="noopener noreferrer" href="#">
+		<div class="contact-icon contact-expand">
+			<div class="contact-content">
+				<img src="img/telegram.png" alt="telegram" class="contact-img">
+				<div class="contact-text">Telegram</div>
+			</div>
+		</div>
+	</a>
 	<script src="script.js"></script>
 </body>
 

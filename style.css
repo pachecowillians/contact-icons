@@ -1,167 +1,114 @@
-.chatContainer{
-	width:50px;
-	position: fixed;
-	bottom: 50px;
-	right: 50px;
-	z-index: 999999;
-}
-
-.openMenu{
-	background: #2fb5d2;
-	position: fixed;
-	bottom: 20px;
-	width:60px;
-	height:60px;
-	border-radius:50%;
-	display: inline;
-	z-index: 999999;
-}
-
-.chatWpp{
-	background: rgba(37, 211, 102,0);
-	position: fixed;
-	bottom: 30px;
-	right:40px;
-	width:60px;
-	height:60px;
-	border-radius:50%;
-	display: inline;
-	z-index: 999999;
-	transition: bottom 0.3s, background 0.5s, width 0.3s, border-radius 0.3s, right 0.3s, visibility 0.2s;
-}
-
-.chatMail{
-	background: rgba(212, 70, 56,0);
-	position: fixed;
-	bottom: 30px;
-	right:40px;
-	width:60px;
-	height:60px;
-	border-radius:50%;
-	display: inline;
-	z-index: 999999;
-	transition: bottom 0.3s, background 0.5s, width 0.3s, border-radius 0.3s, right 0.3s, visibility 0.2s;
-}
-
-.chatTelegram{
-	background: rgba(0, 136, 204,0);
-	position: fixed;
-	bottom: 30px;
-	right:40px;
-	width:60px;
-	height:60px;
-	border-radius:50%;
-	display: inline;
-	z-index: 999999;
-	transition: bottom 0.3s, background 0.5s, width 0.3s, border-radius 0.3s, right 0.3s, visibility 0.2s;
-}
-
-.chatOnline{
-	background: rgba(239, 100, 90,0);
-	position: fixed;
-	bottom: 30px;
-	right:40px;
-	width:60px;
-	height:60px;
-	border-radius:50%;
-	display: inline;
-	z-index: 999999;
-	transition: bottom 0.3s, background 0.5s, width 0.3s, border-radius 0.3s, right 0.3s, visibility 0.2s;
-}
-
-.iconChat{
-	position: relative;
-	left: 18px;
-	top: 17px;
-	width:25px;
-	height:25px;
-}
-
-.textChat{
-	cursor: default;
+.talk-with-us {
 	user-select: none;
-	background:#fff;
+	position: fixed;
+	right: 8rem;
+	bottom: 1rem;
+	border: 1px solid #361ad6;
+	border-radius: 0.8rem;
+	padding: 0.8rem 1.2rem;
+	color: #361ad6;
 	font-family: 'Noto Sans', sans serif;
-	font-size: 15px;
+	font-size: 0.9rem;
 	font-weight: bold;
-	color: #2fb5d2;
-	border: 1px solid #2fb5d2;
-	border-radius: 15px;
+	margin: 0.5rem 0rem;
+}
+
+.triangle {
 	position: absolute;
-	bottom: -25px;
-	right: 70px;
-	width:  130px;
-	padding: 15px;
+	right: -0.7rem;
+	top: 0.7rem;
+	width: 0;
+	height: 0;
+	border-top: 0.7rem solid transparent;
+	border-bottom: 0.7rem solid transparent;
+	border-left: 0.7rem solid;
+}
+
+.triangle-border {
+	border-left: 0.7rem solid #361ad6;
+}
+
+.triangle-white {
+	right: -0.65rem;
+	border-left: 0.7rem solid #fff;
+}
+
+.contact-icon {
+	position: fixed;
+	bottom: 1rem;
+	right: 3rem;
+	width: 3.7rem;
+	height: 3.7rem;
+	border-radius: 50%;
+	font-family: 'Noto Sans', sans serif;
+	font-weight: bold;
 	text-align: center;
-	box-shadow: 0 2px 8px 0 rgba(0,0,0,.11);
-	transition: bottom 0.3s, width 0.1s;
+	user-select: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
 }
 
-.triangle{
-	position: relative;
-	right: 20px;
-	bottom: -6px;
-	width: 0px; 
-	height: 0px; 
-	border-top: 8px solid transparent;
-	border-bottom: 8px solid transparent;
-	border-left: 8px solid #2fb5d2;
-	transition: bottom 0.3s;
+.contact-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
-.triangleWhite{
-	position: absolute;
-	left: -22px;
-	bottom: -7px;
-	width: 0px; 
-	height: 0px; 
-	border-top: 9px solid transparent;
-	border-bottom: 9px solid transparent;
-	border-left: 9px solid #fff;
-	z-index: 999999;
-	transition: bottom 0.3s;
-}
-.txtLink{
-	text-decoration: none;
-}
-.chatWpp:hover, .chatMail:hover, .chatTelegram:hover, .chatOnline:hover{
-	right: 40px;
-	width: 150px;
-	border-radius:30px;
-	z-index: 999999;
+.contact-expand {
+	z-index: 0;
+	transition: width 0.3s, border-radius 0.3s, color 0.4s, bottom 0.3s, visibility 0.3s, background 0.3s;
 }
 
-.textMenu{
-	color:rgba(255,255,255,0);
-	visibility: hidden;
-	font-family: 'Noto Sans', sans serif;
-	font-size: 15px;
-	font-weight: bold;
-	position: absolute;
-	top: 20px;
-	left: 55px;
-	transition: color 0.3s;
+.contact-text {
+	margin: 0;
+	font-size: 0rem;
+	transition: font-size 0.3s;
 }
 
-@media (max-width: 500px){
-	.txtLink{
-		text-decoration: none;
-	}
-	.chatWpp, .chatMail, .chatTelegram, .chatOnline{
-		right: 40px;
-		width: 150px;
-		border-radius:30px;
-	}
+.contact-expand:hover {
+	width: 10rem;
+	border-radius: 30px;
+	margin: 0;
+}
 
-	.textMenu{
-		color:rgba(255,255,255,1);
-		font-family: 'Noto Sans', sans serif;
-		font-size: 15px;
-		font-weight: bold;
-		position: absolute;
-		top: 18px;
-		left: 55px;
-		transition: color 0.3s;
-	}
+.contact-expand:hover .contact-text {
+	margin: auto 0.5rem;
+	font-size: 0.95rem;
+	color: #fff;
+}
 
+.contact-expand:hover .contact-content {
+	bottom: 10rem;
+}
+
+.contact-img {
+	width: 1.5rem;
+}
+
+.toggle-contact {
+	background: #361ad6;
+}
+
+.email-contact {
+	bottom: 5rem;
+	background: rgb(212, 70, 56);
+	color: rgb(212, 70, 56);
+}
+
+.whatsapp-contact {
+	bottom: 9rem;
+	background: rgb(37, 211, 102);
+	color: rgb(37, 211, 102);
+}
+
+.telegram-contact {
+	bottom: 13rem;
+	background: rgb(0, 136, 204);
+	color: rgb(0, 136, 204);
 }
